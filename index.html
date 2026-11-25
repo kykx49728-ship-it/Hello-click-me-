@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 20px 55px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 0 25px #6d28d9;
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(0.92);
+}
+
+#message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button id="helloBtn">Click me</button>
+  <div id="message"></div>
+</div>
+
+<script>
+document.getElementById("helloBtn").addEventListener("click", function() {
+  document.getElementById("message").textContent = "Hello! 👋";
+});
+</script>
+
+</body>
+</html>
